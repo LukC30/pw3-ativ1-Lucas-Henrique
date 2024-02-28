@@ -20,7 +20,8 @@ function App() {
       alt ={alt[0]} 
       />
       <Texto
-      {...texto}
+      titulo={"Jojo golden wind"}
+      descricao={"Koichi Hirose viaja à Itália em busca de Haruno Shiobana, o suposto filho de Dio. Ao chegar lá, um garoto loiro que se diz chamar Giorno Giovanna rouba sua bagagem... A estranha semelhança na pronúncia dos nomes e certa demonstração de poder podem indicar que Giorno e Haruno são a mesma pessoa!"}
       />
     </div>
   );

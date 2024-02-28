@@ -1,8 +1,10 @@
+import '../App.css';
+
+
 function Livro({fonte, alt}) {
         return (
             <div className="cardImagem">
-                <img src={fonte} alt={alt}></img>
-                
+                <img src={fonte} alt={alt}></img>   
             </div>
         );
     }
