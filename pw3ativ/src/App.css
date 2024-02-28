@@ -4,9 +4,8 @@
   padding-top: 5%;
   padding-right: 20%;
   background-color: bisque;
-  height: auto;
-  width: auto;
-
+  min-height: auto;
+  min-width: auto;
 }
 
 .App-logo {
@@ -46,7 +45,7 @@
 
 .cardImagem{
   justify-content: left;
-
+  
   min-height: 30%;
   min-width: 15%;
   margin-left: 10%;
@@ -57,10 +56,18 @@
   position: relative;
 }
 
+.imagem{
+width: auto;
+height: auto;
+
+}
+
+
 .divTexto{
     align-items: center;
     color: black;
-    max-width: 90%;
+    min-width: auto;
+    min-height: auto;
     display: flexbox;
     flex-wrap: wrap;
     position: static;
@@ -75,13 +82,26 @@
 
 .autor{
 text-align: left;
-color: gray;
-
+text-decoration: solid;
+color: black;
 }
 
 .descricao{
   text-align: left;
 
 
+
+}
+.hr{
+border: 1px solid black;
+}
+
+a{
+
+
+}
+
+a:hover{
+  color: blue;
 
 }
