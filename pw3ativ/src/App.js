@@ -3,26 +3,33 @@ import './App.css';
 import vol1 from './images/jojomanga1.png';
 import Livro from './components/livro';
 import Texto from './components/Texto'
+import Container from 'react-bootstrap/Container';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from 'react-bootstrap/Card';
 const alt = ["capa vol 1 de jojo golden wind", "capa vol 2 de jojo golden wind", "capa vol 3 de jojo golden wind"]
 
 function App() {
-  const texto = {
-    titulo: "",
-    autor: "",
-    avaliacao: "",
-    descricao: "" 
-}
 
   return (
     <div className="App">
+      <Container>
+        <Row>
+          <Col>
       <Livro
       fonte={vol1}
       alt ={alt[0]} 
       />
+     </Col>
+     <Col>
       <Texto
       titulo={"Jojo golden wind"}
+      autor={"Hirohiko araki"}
       descricao={"Koichi Hirose viaja à Itália em busca de Haruno Shiobana, o suposto filho de Dio. Ao chegar lá, um garoto loiro que se diz chamar Giorno Giovanna rouba sua bagagem... A estranha semelhança na pronúncia dos nomes e certa demonstração de poder podem indicar que Giorno e Haruno são a mesma pessoa!"}
       />
+      </Col>
+      </Row>
+      </Container>
     </div>
   );
 }

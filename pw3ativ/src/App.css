@@ -1,7 +1,12 @@
 .App {
   text-align: center;
   columns: 2;
-  padding-top: 100px;
+  padding-top: 5%;
+  padding-right: 20%;
+  background-color: bisque;
+  height: auto;
+  width: auto;
+
 }
 
 .App-logo {
@@ -41,31 +46,42 @@
 
 .cardImagem{
   justify-content: left;
-  display: flexbox;
-  flex-direction: column;
-  height: 30%;
-  width: 15%;
-  margin-left: 30px;
-  border-radius: 10%;
 
+  min-height: 30%;
+  min-width: 15%;
+  margin-left: 10%;
+  border-radius: 10%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .divTexto{
-    flex-direction: column;
-    max-width: 50%;
-
+    align-items: center;
+    color: black;
+    max-width: 90%;
+    display: flexbox;
+    flex-wrap: wrap;
+    position: static;
 }
 
 .tituloLivro{
   text-transform: capitalize;
   text-decoration: solid;
+  text-align: left;
+  word-wrap: normal;
+}
 
-
+.autor{
+text-align: left;
+color: gray;
 
 }
 
 .descricao{
-    text-justify: distribute-all-lines;
-    color: gray;
+  text-align: left;
+
+
 
 }

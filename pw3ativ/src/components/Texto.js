@@ -1,35 +1,11 @@
-import { render } from "@testing-library/react";
-import React from "react";
+import Card from 'react-bootstrap/Card';
 
-
-class Texto extends React.Component {
-    constructor({...text}) {
-        super(text)
-        const texto = {
-            titulo: "",
-            autor: "",
-            avaliacao: "",
-            descricao: "" 
-        };
-        this.texto = text;
-    }
-    render(){
-        return (
-            <div>
-            <h3>
-                {this.texto.titulo}
-            </h3>
-            <p>
-                {this.texto.autor} , {this.texto.avaliacao}
-            </p>
-            <p>
-                {this.texto.descricao}
-            </p>
-            </div>
-        );
-    };
-
-  
+function BodyOnlyExample() {
+  return (
+    <Card>
+      <Card.Body>This is some text within a card body.</Card.Body>
+    </Card>
+  );
 }
 
-export default Texto;
+export default BodyOnlyExample;
