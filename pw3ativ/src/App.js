@@ -14,13 +14,13 @@ function App() {
     <div className="App">
       <Container>
         <Row>
-          <Col>
+          <Col style={{display: 'flexbox'}}>
       <Livro
       fonte={vol1}
       alt ={alt[0]} 
       />
      </Col>
-     <Col>
+     <Col style={{display: 'flexbox'}}>
       <Texto
       titulo={"Jojo's Bizarre Adventure Parte 5: Golden Wind Vol. 01"}
       tipoLivro={"Capa comum - 25 agosto 2023"}
